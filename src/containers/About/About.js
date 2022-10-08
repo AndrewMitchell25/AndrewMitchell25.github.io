@@ -1,15 +1,16 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import "./About.scss"
 import { motion } from 'framer-motion'
 import { images } from '../../constants'
+import { AppWrap } from '../../wrappper'
 
 const abouts = [
-  { title: 'Web Development', description: "I am a good web developer", imgUrl: ""},
-  { title: 'Web Design', description: "I am a good web designer", imgUrl: ""},
-  { title: 'UI/UX', description: "I am a good ui/ux developer", imgUrl: ""}
+  { title: 'Web Development', description: "I am a good web developer", imgUrl: images.ctf},
+  { title: 'Web Design', description: "I am a good web designer", imgUrl: images.ctf},
+  { title: 'UI/UX', description: "I am a good ui/ux developer", imgUrl: images.ctf}
 ]
 
-export default function About() {
+const About = () => {
   return (
     <>
       <h2 className='head-text'>I Know That <span>Good Development</span><br /> means <span>Good Business</span></h2>
@@ -32,3 +33,5 @@ export default function About() {
     </>
   )
 }
+
+export default AppWrap(About, 'about')
