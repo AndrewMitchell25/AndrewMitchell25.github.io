@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Work.scss"
 import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 import { motion } from 'framer-motion'
-import { AppWrap } from "../../wrappper"
+import { AppWrap, MotionWrap } from "../../wrappper"
 import { images } from '../../constants'
 
 const works = [
@@ -100,4 +100,4 @@ const Work = () => {
   )
 }
 
-export default AppWrap(Work, 'work')
+export default AppWrap(MotionWrap(Work, 'app__works'), 'work', 'app__primarybg')

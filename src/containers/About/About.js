@@ -2,7 +2,7 @@ import React from 'react'
 import "./About.scss"
 import { motion } from 'framer-motion'
 import { images } from '../../constants'
-import { AppWrap } from '../../wrappper'
+import { AppWrap, MotionWrap } from '../../wrappper'
 
 const abouts = [
   { title: 'Web Development', description: "I am a good web developer", imgUrl: images.ctf},
@@ -34,4 +34,4 @@ const About = () => {
   )
 }
 
-export default AppWrap(About, 'about')
+export default AppWrap(MotionWrap(About, 'app__about'), 'about', 'app__whitebg')
