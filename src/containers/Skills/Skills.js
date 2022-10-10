@@ -6,9 +6,13 @@ import ReactTooltip from "react-tooltip"
 import "./Skills.scss"
 
 const skills = [
-  {name: 'React', imgUrl: images.react, bgColor: ''},
-  {name: 'C', imgUrl: images.c, bgColor: ''},
-  {name: 'Python', imgUrl: images.python, bgColor: ''}
+  {name: 'React', imgUrl: images.react, bgColor: '#edf2fa'},
+  {name: 'C', imgUrl: images.c, bgColor: '#edf2fa'},
+  {name: 'Python', imgUrl: images.python, bgColor: '#edf2fa'},
+  {name: 'Git', imgUrl: images.git, bgColor: '#edf2fa'},
+  {name: 'HTML', imgUrl: images.html, bgColor: '#edf2fa'},
+  {name: 'CSS', imgUrl: images.css, bgColor: '#edf2fa'},
+  {name: 'JavaScript', imgUrl: images.javascript, bgColor: '#edf2fa'}
 ]
 
 const experiences = [

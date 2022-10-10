@@ -6,9 +6,12 @@ import { AppWrap, MotionWrap } from "../../wrappper"
 import { images } from '../../constants'
 
 const works = [
-  { title: 'Capture the Flag', description: "I am a good web developer", projectLink: '', codeLink: '', imgUrl: images.ctf, tags: ['UI/UX']},
-  { title: 'Project: Horizon', description: "I am a good web developer", projectLink: '', codeLink: '', imgUrl: images.ctf, tags: ['Web App']},
-  { title: 'Sudoku Solver+', description: "I am a good web developer", projectLink: '', codeLink: '', imgUrl: images.ctf, tags: ['Mobile App']}
+  { title: 'Project: Horizon', description: "I am a good web developer", projectLink: 'https://sol-solutions.herokuapp.com/', codeLink: 'https://github.com/AndrewMitchell25/project-horizon', imgUrl: images.projecthorizon, tags: ['Web App']},
+  { title: 'Capture the Flag', description: "I am a good web developer", projectLink: process.env.PUBLIC_URL + '/projects/CTFWebGL/index.html', codeLink: 'https://github.com/AndrewMitchell25/Capture-the-Flag', imgUrl: images.ctf, tags: ['Unity/C#','Mobile App']},
+  { title: 'Sudoku Solver', description: "I am a good web developer", projectLink: 'https://github.com/AndrewMitchell25/SudokuSolver', codeLink: 'https://github.com/AndrewMitchell25/SudokuSolver', imgUrl: images.sudoku, tags: ['Python']},
+  { title: 'Tyler the Twitter Bot', description: "I am a good web developer", projectLink: 'https://twitter.com/TylerIsABot2', codeLink: 'https://github.com/AndrewMitchell25/Tyler', imgUrl: images, tags: ['JavaScript']},
+  { title: 'Chess AI', description: "I am a good web developer", projectLink: 'https://github.com/AndrewMitchell25/SudokuSolver', codeLink: 'https://github.com/AndrewMitchell25/Chess', imgUrl: images, tags: ['In Progress','React']},
+  { title: 'Self-Driving Car', description: "I am a good web developer", projectLink: process.env.PUBLIC_URL + '/Self-Driving-Car/', codeLink: 'https://github.com/AndrewMitchell25/Self-Driving-Car', imgUrl: images, tags: ['In Progress','JavaScript']}
 ]
 
 const Work = () => {
@@ -37,7 +40,7 @@ const Work = () => {
       <h2 className='head-text'>My Creative <span>Portfolio</span></h2>
 
       <div className='app__work-filter'>
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['Web App', 'Mobile App', 'Python', 'Unity/C#', 'React', 'In Progress', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={()=>handleWorkFilter(item)}
