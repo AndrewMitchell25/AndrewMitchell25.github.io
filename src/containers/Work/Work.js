@@ -6,17 +6,20 @@ import { AppWrap, MotionWrap } from "../../wrappper"
 import { images } from '../../constants'
 
 const works = [
-  { title: 'Project: Horizon', description: "I am a good web developer", projectLink: 'https://sol-solutions.herokuapp.com/', codeLink: 'https://github.com/AndrewMitchell25/project-horizon', imgUrl: images.projecthorizon, tags: ['Web App']},
-  { title: 'Capture the Flag', description: "I am a good web developer", projectLink: process.env.PUBLIC_URL + '/projects/CTFWebGL/index.html', codeLink: 'https://github.com/AndrewMitchell25/Capture-the-Flag', imgUrl: images.ctf, tags: ['Unity/C#','Mobile App']},
-  { title: 'Sudoku Solver', description: "I am a good web developer", projectLink: 'https://github.com/AndrewMitchell25/SudokuSolver', codeLink: 'https://github.com/AndrewMitchell25/SudokuSolver', imgUrl: images.sudoku, tags: ['Python']},
-  { title: 'Tyler the Twitter Bot', description: "I am a good web developer", projectLink: 'https://twitter.com/TylerIsABot2', codeLink: 'https://github.com/AndrewMitchell25/Tyler', imgUrl: images, tags: ['JavaScript']},
-  { title: 'Chess AI', description: "I am a good web developer", projectLink: 'https://github.com/AndrewMitchell25/SudokuSolver', codeLink: 'https://github.com/AndrewMitchell25/Chess', imgUrl: images, tags: ['In Progress','React']},
-  { title: 'Self-Driving Car', description: "I am a good web developer", projectLink: process.env.PUBLIC_URL + '/Self-Driving-Car/', codeLink: 'https://github.com/AndrewMitchell25/Self-Driving-Car', imgUrl: images, tags: ['In Progress','JavaScript']}
+  { title: 'Project: Horizon', description: "", projectLink: 'https://sol-solutions.herokuapp.com/', codeLink: 'https://github.com/AndrewMitchell25/project-horizon', imgUrl: images.projecthorizon, tags: ['Web App', 'Finished', 'Pinned']},
+  { title: 'Capture the Flag', description: "", projectLink: process.env.PUBLIC_URL + '/projects/CTFWebGL/index.html', codeLink: 'https://github.com/AndrewMitchell25/Capture-the-Flag', imgUrl: images.ctf, tags: ['Unity/C#','Mobile App', 'Finished', 'Pinned']},
+  { title: 'Sudoku Solver', description: "A sudoku solver problem developed using a recursive algorithm.", projectLink: 'https://github.com/AndrewMitchell25/SudokuSolver', codeLink: 'https://github.com/AndrewMitchell25/SudokuSolver', imgUrl: images.sudoku, tags: ['Python', 'Finished', 'Pinned']}
+]
+
+const otherWorks = [
+  { title: 'Tyler the Twitter Bot', description: "", projectLink: 'https://twitter.com/TylerIsABot2', codeLink: 'https://github.com/AndrewMitchell25/Tyler', imgUrl: images, tags: ['JavaScript', 'Finished']},
+  { title: 'Chess AI', description: "", projectLink: '', codeLink: 'https://github.com/AndrewMitchell25/Chess', imgUrl: images, tags: ['In Progress','React']},
+  { title: 'Self-Driving Car', description: "", projectLink: process.env.PUBLIC_URL + '/Self-Driving-Car/', codeLink: 'https://github.com/AndrewMitchell25/Self-Driving-Car', imgUrl: images, tags: ['In Progress','JavaScript']}
 ]
 
 const Work = () => {
 
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [activeFilter, setActiveFilter] = useState('Pinned');
   const [animateCard, setAnimateCard] = useState({y:0, opacity: 1});
   const [filterWork, setFilterWork] = useState(works)
 
@@ -27,10 +30,12 @@ const Work = () => {
     setTimeout(() => {
       setAnimateCard([{y:0, opacity:1}]);
 
-      if(item === "All") {
+      if(item === 'Pinned') {
         setFilterWork(works);
+      } else if(item === "All") {
+        setFilterWork(works.concat(otherWorks));
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)))
+        setFilterWork(works.concat(otherWorks).filter((work) => work.tags.includes(item)))
       }
     }, 500)
   }
@@ -40,7 +45,7 @@ const Work = () => {
       <h2 className='head-text'>My Creative <span>Portfolio</span></h2>
 
       <div className='app__work-filter'>
-        {['Web App', 'Mobile App', 'Python', 'Unity/C#', 'React', 'In Progress', 'All'].map((item, index) => (
+        {['Pinned', 'Web App', 'Mobile App', 'Python', 'Unity/C#', 'React', 'Finished', 'In Progress', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={()=>handleWorkFilter(item)}

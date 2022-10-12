@@ -16,9 +16,10 @@ const skills = [
 ]
 
 const experiences = [
-  {name: 'Computer Consultant', company: 'Engineering & Science Computing at Notre Dame', description: "I'm so awesome", year: '2022'},
-  {name: 'Computer Consultan', company: 'Engineering & Science Computing at Notre Dame', description: "I'm so awesome", year: '2022'},
-  {name: 'Computer Consultt', company: 'Engineering & Science Computing at Notre Dame', description: "I'm so awesome", year: '2022'}
+  {name: 'Computer Consultant', company: 'Engineering & Science Computing at Notre Dame', description: "", year: '2022'},
+  {name: 'Customer Service Associate', company: 'Fountain Bowl', description: "", year: '2022'},
+  {name: 'Volunteer Project Member', company: 'CS4Good', description: "", year: '2022'},
+  {name: 'Personal Tutor', company: 'Self Employed', description: "", year: '2018-2021'}
 ]
 
 const Skills = () => {
@@ -70,6 +71,20 @@ const Skills = () => {
           </motion.div>
         </div>
       </div>
+      <motion.div 
+        whileInView={{opacity:[0,1]}}
+        transition={{duration: 0.5}}
+        className='app__skills-resume'
+      >
+        <a href={process.env.PUBLIC_URL + "Andrew_Mitchell_Resume.pdf"} target="_blank" rel='noreferrer'>
+          <motion.button
+          whileHover={{scale: 1.1}}
+          className="app__skills-resbutton app__flex p-text"
+          >
+            Download My Resume
+          </motion.button>
+        </a>
+      </motion.div>
     </>
   )
 }

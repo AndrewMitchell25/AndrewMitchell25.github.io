@@ -139,3 +139,35 @@
         line-height: 2 !important;
     }
 }
+
+.app__skills-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+    
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .app__skills-resbutton {
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--primary-color);
+    
+        font-weight: 500;
+        color: var(--black-color);
+        outline: none;
+        font-family: var(--font-base);
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
