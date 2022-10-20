@@ -8,12 +8,12 @@ import { images } from '../../constants'
 const works = [
   { title: 'Project: Horizon', description: "", projectLink: 'https://sol-solutions.herokuapp.com/', codeLink: 'https://github.com/AndrewMitchell25/project-horizon', imgUrl: images.projecthorizon, tags: ['Web App', 'Finished', 'Pinned']},
   { title: 'Capture the Flag', description: "", projectLink: process.env.PUBLIC_URL + '/projects/CTFWebGL/index.html', codeLink: 'https://github.com/AndrewMitchell25/Capture-the-Flag', imgUrl: images.ctf, tags: ['Unity/C#','Mobile App', 'Finished', 'Pinned']},
-  { title: 'Sudoku Solver', description: "A sudoku solver problem developed using a recursive algorithm.", projectLink: 'https://github.com/AndrewMitchell25/SudokuSolver', codeLink: 'https://github.com/AndrewMitchell25/SudokuSolver', imgUrl: images.sudoku, tags: ['Python', 'Finished', 'Pinned']}
+  { title: 'Sudoku Solver', description: "A sudoku solver program developed using a recursive backtracking  algorithm.", projectLink: 'https://github.com/AndrewMitchell25/SudokuSolver', codeLink: 'https://github.com/AndrewMitchell25/SudokuSolver', imgUrl: images.sudoku, tags: ['Python', 'Finished', 'Pinned']}
 ]
 
 const otherWorks = [
   { title: 'Tyler the Twitter Bot', description: "", projectLink: 'https://twitter.com/TylerIsABot2', codeLink: 'https://github.com/AndrewMitchell25/Tyler', imgUrl: images, tags: ['JavaScript', 'Finished']},
-  { title: 'Chess AI', description: "", projectLink: '', codeLink: 'https://github.com/AndrewMitchell25/Chess', imgUrl: images, tags: ['In Progress','React']},
+  { title: 'Chess AI', description: "", projectLink: process.env.PUBLIC_URL + '/Chess/', codeLink: 'https://github.com/AndrewMitchell25/Chess', imgUrl: images, tags: ['In Progress','React']},
   { title: 'Self-Driving Car', description: "", projectLink: process.env.PUBLIC_URL + '/Self-Driving-Car/', codeLink: 'https://github.com/AndrewMitchell25/Self-Driving-Car', imgUrl: images, tags: ['In Progress','JavaScript']}
 ]
 

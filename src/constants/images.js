@@ -1,5 +1,5 @@
 import ctf from "../assets/capture-the-flag.png"
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.svg"
 import profile from "../assets/profile.png"
 import circle from "../assets/circle.svg"
 import javascript from "../assets/javascript.png"
@@ -11,6 +11,12 @@ import css from "../assets/css.png"
 import html from "../assets/html.png"
 import projecthorizon from "../assets/projecthorizon.png"
 import sudoku from "../assets/sudoku.png"
+import circle1 from "../assets/circles/circle1.svg"
+import circle2 from "../assets/circles/circle2.svg"
+import circle3 from "../assets/circles/circle3.svg"
+import circle4 from "../assets/circles/circle4.svg"
+import circle5 from "../assets/circles/circle5.svg"
+
 
 
 
@@ -27,7 +33,12 @@ const images = {
     css,
     html,
     projecthorizon,
-    sudoku
+    sudoku,
+    circle1,
+    circle2,
+    circle3,
+    circle4,
+    circle5
 }
 
 export default images;

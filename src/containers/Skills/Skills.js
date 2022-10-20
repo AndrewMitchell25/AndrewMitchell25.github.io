@@ -16,10 +16,10 @@ const skills = [
 ]
 
 const experiences = [
-  {name: 'Computer Consultant', company: 'Engineering & Science Computing at Notre Dame', description: "", year: '2022'},
-  {name: 'Customer Service Associate', company: 'Fountain Bowl', description: "", year: '2022'},
-  {name: 'Volunteer Project Member', company: 'CS4Good', description: "", year: '2022'},
-  {name: 'Personal Tutor', company: 'Self Employed', description: "", year: '2018-2021'}
+  {name: 'Computer Consultant', company: 'Engineering & Science Computing at Notre Dame', description: "Process and image new laptops and desktops, set-up and deliver computers to staff, and assist faculty with troubleshooting IT problems.", year: '2022'},
+  {name: 'Customer Service Associate', company: 'Fountain Bowl', description: "Worked customer service at a bowling alley, solved customer problems, served food, and provided a clean and healthy environment.", year: '2022'},
+  {name: 'Volunteer Project Member', company: 'CS4Good', description: "Worked with my team to create a website for the club. Learned web development with HTML, CSS, and JavaScript along with teamwork skills and GitHub.", year: '2022'},
+  {name: 'Personal Tutor', company: 'Self Employed', description: "Created and implemented lesson plans for middle school and high school students in various subjects on a regular basis, teaching challenging topics and reinforcing what was learned in the classroom in one-on-one tutoring sessions.", year: '2018-2021'}
 ]
 
 const Skills = () => {
@@ -57,15 +57,16 @@ const Skills = () => {
                   <h4 className='bold-text'>{work.name}</h4>
                   <p className='p-text'>{work.year}</p>
                   <p className='p-text'>{work.company}</p>
+                  <p className='p-text'>{work.description}</p>
                 </motion.div>
-                <ReactTooltip
+                {/*<ReactTooltip
                   id={work.name}
                   effect='solid'
                   arrowColor='#fff'
                   className='skills-tooltip'
                 >
                   {work.description}
-                </ReactTooltip>
+                </ReactTooltip> */}
               </div>
             ))}
           </motion.div>

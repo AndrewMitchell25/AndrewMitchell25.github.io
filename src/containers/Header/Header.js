@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { images } from '../../constants'
 import { AppWrap } from "../../wrappper"
 
-const scaleVariants = {
+/*const scaleVariants = {
   whileInView:{
     scale: [0,1],
     opacity: [0,1],
@@ -14,10 +14,105 @@ const scaleVariants = {
     }
   }
 }
+*/
 
 const Header = () => {
   return (
     <div className='app__header app__flex'>
+      <motion.div
+        whileInView={{opacity: [0,1]}}
+        transition={{duration: 1.5}}
+      >
+        <h1 className='app__header-title'>Andrew <span>Mitchell</span></h1>
+        <p className='app__header-subtitle'>Computer Engineering Undergraduate Student</p>
+        <motion.div
+          transition={{delayChildren: 2}}
+          className="app__header-c"
+        >
+          <motion.div 
+            className='app__header-circle'
+            whileInView={{scale: [0,1]}}
+            transition={{duration: 1}} 
+          >
+            <motion.img 
+              src={images.circle1} 
+              alt="" 
+              animate={{ rotate: 360 }}
+              transition={{
+                loop: Infinity,
+                ease: "linear",
+                duration: 100
+              }}
+            />
+          </motion.div>
+          <motion.div 
+            className='app__header-circle'
+            whileInView={{scale: [0,1]}}
+            transition={{duration: 1}} 
+          >
+            <motion.img 
+              src={images.circle2} 
+              alt="" 
+              animate={{ rotate: 360 }}
+              transition={{
+                loop: Infinity,
+                ease: "linear",
+                duration: 30
+              }}
+            />
+          </motion.div>
+          <motion.div 
+            className='app__header-circle'
+            whileInView={{scale: [0,1]}}
+            transition={{duration: 1}} 
+          >
+            <motion.img 
+              src={images.circle3} 
+              alt="" 
+              animate={{ rotate: 360 }}
+              transition={{
+                loop: Infinity,
+                ease: "linear",
+                duration: 75
+              }}
+            />
+          </motion.div>
+          <motion.div 
+            className='app__header-circle'
+            whileInView={{scale: [0,1]}}
+            transition={{duration: 1}} 
+          >
+            <motion.img 
+              src={images.circle4} 
+              alt="" 
+              animate={{ rotate: 360 }}
+              transition={{
+                loop: Infinity,
+                ease: "linear",
+                duration: 100
+              }}
+            />
+          </motion.div>
+          <motion.div 
+            className='app__header-circle'
+            whileInView={{scale: [0,1]}}
+            transition={{duration: 1}} 
+          >
+            <motion.img 
+              src={images.circle5} 
+              alt="" 
+              animate={{ rotate: 360 }}
+              transition={{
+                loop: Infinity,
+                ease: "linear",
+                duration: 50
+              }}
+            />
+          </motion.div>
+        </motion.div>
+
+      </motion.div>
+      {/*
       <motion.div 
         whileInView={{ x: [-100, 0], opacity: [0,1]}}
         transition={{duration: 0.5}}
@@ -64,6 +159,7 @@ const Header = () => {
           </div>
         ))}
       </motion.div>
+        */}
     </div>
   )
 }
