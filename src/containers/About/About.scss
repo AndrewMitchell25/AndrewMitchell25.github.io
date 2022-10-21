@@ -4,10 +4,28 @@
     flex-direction: column;
 }
 
+.app__about-text{
+    font-size: 1rem;
+    text-align: left;
+    color: var(--gray-color);
+    line-height: 1.5;
+    text-align: center;
+    width: 50%;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 100%;
+    }
+}
+
+
 .app__profiles {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 2rem;
 }

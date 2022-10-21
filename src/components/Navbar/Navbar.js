@@ -32,11 +32,18 @@ export default function Navbar() {
           >
             <HiX onClick={() => setToggle(false)}/>
             <ul> 
-            {['home', 'about', 'work', 'skills', 'contact'].map((item) =>   
-              <li key={{item}}>
-                <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
+              {['home', 'about', 'work', 'skills', 'contact'].map((item) =>   
+                <li key={{item}}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
+                </li>
+              )}
+              <br />
+              <li>
+                <a href='https://github.com/AndrewMitchell25' target="_blank" rel='noreferrer'>GitHub</a>
               </li>
-            )}
+              <li>
+                <a href='https://www.linkedin.com/in/andrew-mitchell-572710225/' target="_blank" rel='noreferrer'>LinkedIn</a>
+              </li>
             </ul>
           </motion.div>
         )}
