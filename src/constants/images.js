@@ -16,9 +16,10 @@ import circle2 from "../assets/circles/circle2.svg"
 import circle3 from "../assets/circles/circle3.svg"
 import circle4 from "../assets/circles/circle4.svg"
 import circle5 from "../assets/circles/circle5.svg"
-
-
-
+import chess from "../assets/chess.png"
+import cars from "../assets/cars.png"
+import twitter from "../assets/twitter.png"
+import github from "../assets/github.png"
 
 const images = {
     logo,
@@ -38,7 +39,11 @@ const images = {
     circle2,
     circle3,
     circle4,
-    circle5
+    circle5,
+    chess,
+    cars,
+    twitter,
+    github
 }
 
 export default images;

@@ -9,10 +9,11 @@ const skills = [
   {name: 'React', imgUrl: images.react, bgColor: '#edf2fa'},
   {name: 'C', imgUrl: images.c, bgColor: '#edf2fa'},
   {name: 'Python', imgUrl: images.python, bgColor: '#edf2fa'},
-  {name: 'Git', imgUrl: images.git, bgColor: '#edf2fa'},
+  {name: 'JavaScript', imgUrl: images.javascript, bgColor: '#edf2fa'},
   {name: 'HTML', imgUrl: images.html, bgColor: '#edf2fa'},
   {name: 'CSS', imgUrl: images.css, bgColor: '#edf2fa'},
-  {name: 'JavaScript', imgUrl: images.javascript, bgColor: '#edf2fa'}
+  {name: 'Git', imgUrl: images.git, bgColor: '#edf2fa'},
+  {name: 'GitHub', imgUrl: images.github, bgColor: '#edf2fa'}
 ]
 
 const experiences = [
@@ -25,7 +26,7 @@ const experiences = [
 const Skills = () => {
   return (
     <>
-      <h2 className='head-text'>Skills & Experience</h2>
+      <h2 className='head-text'>Skills & <span>Experience</span></h2>
 
       <div className='app__skills-container'>
         <motion.div className='app__skills-list'>
