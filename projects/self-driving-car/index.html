@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Self-Driving Car</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <a class="navbar-text navbar-items">Self-Driving Car</a></li>
+            <button class="navbar-button navbar-items" onclick="save()">Save</button></li>
+            <button class="navbar-button navbar-items" onclick="discard()">Trash</button>
+            <button class="navbar-button navbar-items" onclick="pause()" id="pause">Pause</button>
+            <!--<button class="navbar-button navbar-items" onclick="graphics()" id="graphics">Low Graphics</button>-->
+            <div class="navbar-text navbar-items">
+                <input type="checkbox" id="graphics" name="graphics" onchange="graphics()"></input>
+                <label for="graphics">Low Graphics</label>
+            </div>
+            <div class="navbar-text navbar-items">
+                Mutation Amount
+                <select class="navbar-select" name="mutationAmount" id="mutationAmount" onchange="setM(this.value)">
+                    <option value="0.1" selected>0.1</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.8">0.8</option>
+                    <option value="1.0">1.0</option>
+                </select>
+            </div>
+            <div class="navbar-text navbar-items">
+                Number of Cars
+                <select class="navbar-select" name="numberOfCars" id="numberOfCars" onchange="setN(this.value)">
+                    <option value="1">1</option>
+                    <option value="100" selected>100</option>
+                    <option value="200">200</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                </select>
+            </div>
+            <button class="navbar-button navbar-items" onclick="nextGen()" id="nextGen">Next Generation</button>
+            <button class="navbar-button navbar-items" onclick="restart()" id="restart">Restart</button>
+        </ul>
+    </nav>
+    <div class="canvases">
+        <canvas id="carCanvas"></canvas>
+        <canvas id="networkCanvas"></canvas>
+    </div>
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
