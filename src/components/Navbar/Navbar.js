@@ -44,6 +44,10 @@ export default function Navbar() {
               <li>
                 <a href='https://www.linkedin.com/in/andrew-mitchell-572710225/' target="_blank" rel='noreferrer'>LinkedIn</a>
               </li>
+              <li>
+                <a href='https://leetcode.com/AndrewMitchell25/' target="_blank" rel='noreferrer'>LeetCode</a>
+              </li>
+              
             </ul>
           </motion.div>
         )}

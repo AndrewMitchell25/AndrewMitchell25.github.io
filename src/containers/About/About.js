@@ -18,9 +18,19 @@ const About = () => {
       <div className='app__flex app__profiles'>
         <p className='app__about-text'>
           I am an undergraduate student at the University of Notre Dame,
-          currently studying to get a Bachelor's Degree of Science in Computer Engineering. I have been 
+          currently studying to get a Bachelor's Degree of Science in Computer Engineering. <br />
+          I have loved programming from a young age. I started coding video games with Scratch 
+          and taught myself the basics of Python when I was in fifth grade. Since then, I have 
+          continued to develop video games with C# using Unity, learned C and Python in class, 
+          and have recently delved into JavaScript and web development. With every project, my 
+          love for programming has only grown more intense, and, when coupled with my passion for 
+          learning, has allowed me to develop skills in a wide variety of software development 
+          fields, including cybersecurity and app development.
+          {/*
+          I have been 
           programming in some form or another since 5th grade and it has become a passion of mine. I am
           always searching for new things to learn, and I enjoy problem-solving.
+          */}
         </p>
       </div>
 
