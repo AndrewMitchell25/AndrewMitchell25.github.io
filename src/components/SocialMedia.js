@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
-import { SiLeetcode } from 'react-icons/si'
+import { SiLeetcode, SiHackerrank } from 'react-icons/si'
 
 export default function SocialMedia() {
   return (

@@ -6,7 +6,7 @@ import { AppWrap, MotionWrap } from "../../wrappper"
 import { images } from '../../constants'
 
 const works = [
-  { title: 'Project: Horizon', description: "A web-app prototype created with Python and Flask during a Hackathon that aims to encourage homeowners to switch to renewable energy by providing a free consultation on the benefits of going solar in their area.", projectLink: 'https://sol-solutions.herokuapp.com/', codeLink: 'https://github.com/AndrewMitchell25/project-horizon', imgUrl: images.projecthorizon, tags: ['Web App', 'Finished', 'Python', 'Pinned']},
+  { title: 'Project: Horizon', description: "A web-app prototype created with Python and Flask during a Hackathon that aims to encourage homeowners to switch to renewable energy by providing a free consultation on the benefits of going solar in their area.", projectLink: 'https://sol-solutions.vercel.app/', codeLink: 'https://github.com/AndrewMitchell25/project-horizon', imgUrl: images.projecthorizon, tags: ['Web App', 'Finished', 'Python', 'Pinned']},
   { title: 'Capture the Flag', description: "A 2D game created using Unity and C#, involved graphic design, UI, scripting, and developed into both a PC and mobile app. ", projectLink: process.env.PUBLIC_URL + '/projects/CTFWebGL/index.html', codeLink: 'https://github.com/AndrewMitchell25/Capture-the-Flag', imgUrl: images.ctf, tags: ['Unity/C#','Mobile App', 'Finished', 'Pinned']},
   { title: 'Sudoku Solver', description: "A sudoku solver program written in Python that was developed using a recursive backtracking algorithm.", projectLink: 'https://github.com/AndrewMitchell25/SudokuSolver', codeLink: 'https://github.com/AndrewMitchell25/SudokuSolver', imgUrl: images.sudoku, tags: ['Python', 'Finished', 'Pinned']}
 ]
