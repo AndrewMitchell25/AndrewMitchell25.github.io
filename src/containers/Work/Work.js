@@ -12,7 +12,8 @@ const works = [
 ]
 
 const otherWorks = [
-  { title: 'Tyler the Twitter Bot', description: "A Twitter bot written with Javascript and using Google Firestore, designed to take programmimg quotes from an API and Tweet them.", projectLink: 'https://twitter.com/TylerIsABot2', codeLink: 'https://github.com/AndrewMitchell25/Tyler', imgUrl: images.twitter, tags: ['JavaScript', 'Finished']},
+  { title: 'The AM News', description: "A news application built with Next.js13 and TypeScript that uses the Mediastack API and Stepzen to create an up-to-date news source.", projectLink: 'https://amnews.vercel.app/', codeLink: 'https://github.com/AndrewMitchell25/amnews', imgUrl: images.amnews, tags: ['Next.js', 'React', 'Finished', 'TypeScript']},
+  { title: 'Tyler the Twitter Bot', description: "A Twitter bot written with Javascript and using Google Firestore, designed to take programming quotes from an API and Tweet them.", projectLink: 'https://twitter.com/TylerIsABot2', codeLink: 'https://github.com/AndrewMitchell25/Tyler', imgUrl: images.twitter, tags: ['JavaScript', 'Finished']},
   { title: 'Chess AI', description: "A work in progress, using React to create a working chess app with plans to create a chess AI in the future.", projectLink: process.env.PUBLIC_URL + '/Chess/', codeLink: 'https://github.com/AndrewMitchell25/Chess', imgUrl: images.chess, tags: ['In Progress','React']},
   { title: 'Self-Driving Car', description: "A machine learning program written with JavaScript that uses a neural network to teach a car to drive on its own.", projectLink: process.env.PUBLIC_URL + '/Self-Driving-Car/', codeLink: 'https://github.com/AndrewMitchell25/Self-Driving-Car', imgUrl: images.cars, tags: ['In Progress','JavaScript']}
 ]

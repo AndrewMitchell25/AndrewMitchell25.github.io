@@ -20,6 +20,7 @@ import chess from "../assets/chess.png"
 import cars from "../assets/cars.png"
 import twitter from "../assets/twitter.png"
 import github from "../assets/github.png"
+import amnews from "../assets/amnews.png"
 
 const images = {
     logo,
@@ -43,7 +44,8 @@ const images = {
     chess,
     cars,
     twitter,
-    github
+    github,
+    amnews
 }
 
 export default images;
