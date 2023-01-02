@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.e8955511.css",
-    "main.js": "/static/js/main.8c761fd1.js",
+    "main.js": "/static/js/main.e8e2f922.js",
     "static/media/capture-the-flag.png": "/static/media/capture-the-flag.2e4ad1bd0f9438d888c6.png",
     "static/media/projecthorizon.png": "/static/media/projecthorizon.6b685de055509ad2be09.png",
+    "static/media/amnews.png": "/static/media/amnews.af4a4b3d68d107bffe98.png",
     "static/media/profile.png": "/static/media/profile.ee489764521abe34026b.png",
     "static/media/cars.png": "/static/media/cars.fd535bf5543d465f70eb.png",
     "static/media/sudoku.png": "/static/media/sudoku.dcf4452b703d965ad326.png",
@@ -21,10 +22,10 @@
     "static/media/circle4.svg": "/static/media/circle4.229c4384d971eced1a75e1b483270c0b.svg",
     "static/media/circle2.svg": "/static/media/circle2.30b6bc5db62a850fe2e5c206a56938ba.svg",
     "main.e8955511.css.map": "/static/css/main.e8955511.css.map",
-    "main.8c761fd1.js.map": "/static/js/main.8c761fd1.js.map"
+    "main.e8e2f922.js.map": "/static/js/main.e8e2f922.js.map"
   },
   "entrypoints": [
     "static/css/main.e8955511.css",
-    "static/js/main.8c761fd1.js"
+    "static/js/main.e8e2f922.js"
   ]
 }
