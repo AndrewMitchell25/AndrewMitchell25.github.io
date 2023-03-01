@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e8955511.css",
-    "main.js": "/static/js/main.e8e2f922.js",
+    "main.js": "/static/js/main.4f95692d.js",
     "static/media/capture-the-flag.png": "/static/media/capture-the-flag.2e4ad1bd0f9438d888c6.png",
     "static/media/projecthorizon.png": "/static/media/projecthorizon.6b685de055509ad2be09.png",
     "static/media/amnews.png": "/static/media/amnews.af4a4b3d68d107bffe98.png",
@@ -9,6 +9,7 @@
     "static/media/cars.png": "/static/media/cars.fd535bf5543d465f70eb.png",
     "static/media/sudoku.png": "/static/media/sudoku.dcf4452b703d965ad326.png",
     "static/media/twitter.png": "/static/media/twitter.043676c745f3f72bc4f9.png",
+    "static/media/flappy.png": "/static/media/flappy.d312032cca1ee1d5babc.png",
     "static/media/c.png": "/static/media/c.bbbbbabc8c191bfb99bf.png",
     "static/media/chess.png": "/static/media/chess.80bb2e0eac53713626c5.png",
     "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
@@ -22,10 +23,10 @@
     "static/media/circle4.svg": "/static/media/circle4.229c4384d971eced1a75e1b483270c0b.svg",
     "static/media/circle2.svg": "/static/media/circle2.30b6bc5db62a850fe2e5c206a56938ba.svg",
     "main.e8955511.css.map": "/static/css/main.e8955511.css.map",
-    "main.e8e2f922.js.map": "/static/js/main.e8e2f922.js.map"
+    "main.4f95692d.js.map": "/static/js/main.4f95692d.js.map"
   },
   "entrypoints": [
     "static/css/main.e8955511.css",
-    "static/js/main.e8e2f922.js"
+    "static/js/main.4f95692d.js"
   ]
 }
