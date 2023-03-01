@@ -37,6 +37,15 @@ const works = [
 
 const otherWorks = [
   {
+    title: "Flappy Bird NEAT",
+    description:
+      "A Python program using Pygame that implements a neural network AI using NEAT to play Flappy Bird.",
+    projectLink: "https://github.com/AndrewMitchell25/FlappyBirdNEAT",
+    codeLink: "https://github.com/AndrewMitchell25/FlappyBirdNEAT",
+    imgUrl: images.flappy,
+    tags: ["Python", "Finished"],
+  },
+  {
     title: "The AM News",
     description:
       "A news application built with Next.js 13 and TypeScript that uses the Mediastack API and Stepzen to create an up-to-date news source.",
