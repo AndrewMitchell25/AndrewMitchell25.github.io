@@ -37,6 +37,15 @@ const works = [
 
 const otherWorks = [
   {
+    title: "AMTimer",
+    description:
+      "Prototype Rubik’s Cube timer capable of generating random scrambles, manipulating a cube model to display the scrambled state, and keeping track of each user’s statistics over time.",
+    projectLink: "https://github.com/AndrewMitchell25/AMTimer",
+    codeLink: "https://github.com/AndrewMitchell25/AMTimer",
+    imgUrl: images.amtimer,
+    tags: ["In Progress", "React", "Next.js", "Web App"],
+  },
+  {
     title: "Flappy Bird NEAT",
     description:
       "A Python program using Pygame that implements a neural network AI using NEAT to play Flappy Bird.",
@@ -81,6 +90,7 @@ const otherWorks = [
     imgUrl: images.cars,
     tags: ["In Progress", "JavaScript"],
   },
+  
 ];
 
 const Work = () => {

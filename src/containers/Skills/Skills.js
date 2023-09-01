@@ -2,14 +2,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { AppWrap, MotionWrap } from "../../wrappper"
 import { images } from '../../constants'
-import ReactTooltip from "react-tooltip"
+//import ReactTooltip from "react-tooltip"
 import "./Skills.scss"
 
 const skills = [
-  {name: 'React', imgUrl: images.react, bgColor: '#edf2fa'},
   {name: 'C', imgUrl: images.c, bgColor: '#edf2fa'},
   {name: 'Python', imgUrl: images.python, bgColor: '#edf2fa'},
   {name: 'JavaScript', imgUrl: images.javascript, bgColor: '#edf2fa'},
+  {name: 'React', imgUrl: images.react, bgColor: '#edf2fa'},
   {name: 'HTML', imgUrl: images.html, bgColor: '#edf2fa'},
   {name: 'CSS', imgUrl: images.css, bgColor: '#edf2fa'},
   {name: 'Git', imgUrl: images.git, bgColor: '#edf2fa'},
@@ -17,10 +17,10 @@ const skills = [
 ]
 
 const experiences = [
-  {name: 'Computer Consultant', company: 'Engineering & Science Computing at Notre Dame', description: "Process and image new laptops and desktops, set-up and deliver computers to staff, and assist faculty with troubleshooting IT problems.", year: '2022'},
-  {name: 'Customer Service Associate', company: 'Fountain Bowl', description: "Worked customer service at a bowling alley, solved customer problems, served food, and provided a clean and healthy environment.", year: '2022'},
-  {name: 'Volunteer Project Member', company: 'CS4Good', description: "Worked with my team to create a website for the club. Learned web development with HTML, CSS, and JavaScript along with teamwork skills and GitHub.", year: '2022'},
-  {name: 'Personal Tutor', company: 'Self Employed', description: "Created and implemented lesson plans for middle school and high school students in various subjects on a regular basis, teaching challenging topics and reinforcing what was learned in the classroom in one-on-one tutoring sessions.", year: '2018-2021'}
+  {name: 'Computer Consultant', company: 'Engineering & Science Computing at Notre Dame', description: "Process and image new laptops and desktops, set-up and deliver computers to staff, and assist faculty with troubleshooting IT problems.", year: '2022-2023'},
+  {name: 'Software Engineering Intern', company: 'NASA Jet Propulsion Laboratory', description: "Worked with a partner to improve the DSN Telemetry Accountability Project under the Deep Space Network Emulator team, which tracks telemetry data as it travels from spacecraft to JPL by generating accountability records at specific venues along the path. Used C to implement new capabilities which allow the project to handle multiple different types of telemetry data simultaneously and process each stream correctly.", year: '2023'},
+  {name: 'Customer Service Associate', company: 'Fountain Bowl', description: "Solved customer problems and provided a clean and healthy environment at a local bowling alley.", year: '2022'},
+  {name: 'Personal Tutor', company: 'Self Employed', description: "Created and implemented lesson plans in various subjects for middle and high school students, teaching challenging topics in one-on-one tutoring sessions.", year: '2018-2021'}
 ]
 
 const Skills = () => {
@@ -78,7 +78,7 @@ const Skills = () => {
         transition={{duration: 0.5}}
         className='app__skills-resume'
       >
-        <a href={process.env.PUBLIC_URL + "Andrew_Mitchell_Resume.pdf"} target="_blank" rel='noreferrer'>
+        <a href={process.env.PUBLIC_URL + "AndrewMitchell_Resume.pdf"} target="_blank" rel='noreferrer'>
           <motion.button
           whileHover={{scale: 1.1}}
           className="app__skills-resbutton app__flex p-text"

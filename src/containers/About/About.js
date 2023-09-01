@@ -26,11 +26,7 @@ const About = () => {
           love for programming has only grown more intense, and, when coupled with my passion for 
           learning, has allowed me to develop skills in a wide variety of software development 
           fields, including cybersecurity and app development.
-          {/*
-          I have been 
-          programming in some form or another since 5th grade and it has become a passion of mine. I am
-          always searching for new things to learn, and I enjoy problem-solving.
-          */}
+
         </p>
       </div>
 

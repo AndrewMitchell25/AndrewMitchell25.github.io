@@ -22,6 +22,7 @@ import twitter from "../assets/twitter.png";
 import github from "../assets/github.png";
 import amnews from "../assets/amnews.png";
 import flappy from "../assets/flappy.png";
+import amtimer from "../assets/amtimer.png";
 
 const images = {
   logo,
@@ -48,6 +49,7 @@ const images = {
   github,
   amnews,
   flappy,
+  amtimer,
 };
 
 export default images;
