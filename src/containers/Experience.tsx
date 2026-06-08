@@ -58,15 +58,15 @@ const experiences = [
     name: "Software Development Engineer",
     company: "Amazon Web Services",
     description:
-      "Work on the EKS Node Lifecycle team, contributing to EKS Auto Mode and OSS Karpenter.",
+      "Develop and maintain core node lifecycle functionality for EKS Auto Mode and OSS Karpenter, a widely adopted Kubernetes node autoscaler. Ship features, bug fixes, and automated test suites that impact hundreds of thousands of clusters, including EC2 health event monitoring for proactive detection of instance/system failures and a configurable do-not-disrupt grace period for temporary pod protection from node disruption. Authored and merged ~50 PRs across kubernetes-sigs/karpenter and aws/karpenter-provider-aws, and reviewed over 50 PRs from open-source community contributors. Resolve high-severity production incidents and continuously improve service observability as an active participant in 24/7 on-call rotations.",
     year: "2025-Present",
     imgUrl: images.aws,
   },
   {
-    name: "Computer Consultant",
+    name: "Computer Consultant (Part-time)",
     company: "Engineering & Science Computing at Notre Dame",
     description:
-      "Process and image new laptops and desktops, set-up and deliver computers to staff, and assist faculty with troubleshooting IT problems.",
+      "Provisioned and deployed enterprise hardware, including processing and imaging new laptops and desktops, managing asset delivery, and providing IT troubleshooting for faculty and staff.",
     year: "2022-2025",
     imgUrl: images.notreDame,
   },
@@ -74,7 +74,7 @@ const experiences = [
     name: "Software Development Engineer Intern",
     company: "Amazon Web Services",
     description:
-      "Worked with the ECS Fargate Agent team to improve service visibility by implementing additional availability metrics in Go and combining them with existing ones to create the Fargate Data Plane Availability Dashboard, helping oncall operators root cause issues in tens of millions of running instances.",
+      "Enhanced production visibility for the ECS Fargate Agent team by implementing new availability metrics in Go. Built the Fargate Data Plane Availability Dashboard, synthesizing complex metric streams to enable on-call operators to rapidly root-cause issues across tens of millions of active instances.",
     year: "2024",
     imgUrl: images.aws,
   },
@@ -82,7 +82,7 @@ const experiences = [
     name: "Software Engineering Intern",
     company: "NASA Jet Propulsion Laboratory",
     description:
-      "Worked with a partner to improve the DSN Telemetry Accountability Project under the Deep Space Network Emulator team, which tracks telemetry data as it travels from spacecraft to JPL by generating accountability records at specific venues along the path. Used C to implement new capabilities which allow the project to handle multiple different types of telemetry data simultaneously and process each stream correctly.",
+      "Scaled the DSN Telemetry Accountability Project under the Deep Space Network Emulator team, optimizing how telemetry data is tracked from spacecraft to JPL by generating records at specific venues along the path. Implemented multi-stream data handling capabilities in C, allowing the system to simultaneously process and validate distinct telemetry data types with zero data loss. Authored comprehensive technical documentation detailing the new multi-stream architecture.",
     year: "2023",
     imgUrl: images.jpl,
   },
