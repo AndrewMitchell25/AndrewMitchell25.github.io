@@ -54,7 +54,10 @@ const Contributions = () => {
         <div className="app__contributions-sidebar">
           <p className="app__contributions-intro">
             Here are some of my notable open source contributions to the
-            Kubernetes ecosystem and beyond. I primarily work on{" "}
+            Kubernetes ecosystem and beyond. I am a{" "}
+            <a href="https://github.com/orgs/kubernetes/people?query=AndrewMitchell25" target="_blank" rel="noreferrer">kubernetes</a> and{" "}
+            <a href="https://github.com/orgs/kubernetes-sigs/people?query=AndrewMitchell25" target="_blank" rel="noreferrer">kubernetes-sigs</a> member, 
+            and I primarily work on{" "}
             <a href="https://karpenter.sh/" target="_blank" rel="noreferrer">Karpenter</a>, a
             node lifecycle management project for Kubernetes.
           </p>
